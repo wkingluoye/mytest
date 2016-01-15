@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="hztg.king.test02"
+    android:versionCode="1"
+    android:versionName="1.0" 
+	>
+	
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="16" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> 
+	<uses-permission android:name="android.permission.RECORD_AUDIO" />
+	<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+	<uses-permission android:name="android.permission.VIBRATE"></uses-permission>
+	
+<application android:allowBackup="true" android:icon="@drawable/ic_launcher"  android:theme="@style/AppTheme" android:label="@string/app_name">
+        <activity android:name="hztg.king.test02.KingTest" android:label="@string/app_label01" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="hztg.king.test02.secondActivity" android:label="@string/app_label02">
+            
+        </activity>
+        <activity android:name="hztg.king.test02.thirdActivity" android:label="@string/app_label03"></activity>
+        <activity android:name="hztg.king.test02.third_r" android:label="@string/app_label03_1"></activity>
+        <activity android:name="hztg.king.test02.forthActivity" android:label="@string/app_label04" ></activity>
+        <activity android:name="hztg.king.test02.fifthActivity" android:label="@string/app_label05" ></activity>
+        <activity android:name="hztg.king.test02.sixthActivaty" android:label="@string/app_label06" ></activity>
+        <activity android:name="hztg.king.test02.seventhActivity" android:label="@string/app_label07" ></activity>
+        <activity android:name="hztg.king.test02.eightActivity" android:label="@string/app_label08" ></activity>
+        <activity android:name="hztg.king.test02.ninthActivity" android:label="@string/app_label09" ></activity>
+        <activity android:name="hztg.king.test02.tenthActivity" android:label="@string/app_label10" ></activity>
+        <activity android:name="hztg.king.test02.eleventhActivity" android:label="@string/app_label11" ></activity>
+        <activity android:name="hztg.king.test02.twelfthActivity" android:label="@string/app_label12" ></activity>
+        <activity android:name="hztg.king.test02.thirteenActivity" android:label="@string/app_label13" ></activity>
+        <activity android:name="hztg.king.test02.forteenActivity" android:label="@string/app_label14" ></activity>
+        <activity android:name="hztg.king.test02.fifteenActivity" android:label="@string/app_label15" ></activity>
+        <activity android:name="hztg.king.test02.sixteenActivity" android:label="@string/app_label16" ></activity>
+        <activity android:name="hztg.king.test02.seventeenActivity" android:label="@string/app_label17" ></activity>
+        
+        
+		<activity android:name="hztg.king.test02.suspendActivity" android:label="弹出窗口" ></activity>
+        <activity android:name="hztg.king.test02.suspend2Activity"
+            android:configChanges="keyboardHidden|orientation|locale"
+            android:theme="@android:style/Theme.Dialog"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <service android:name="util.CounterService" android:enabled="true">
+        </service>
+        <receiver android:name="util.TestReceiver02">
+            <intent-filter> 
+            <action android:name="broadcast.TEST_ACTION02" /> 
+            </intent-filter>
+        </receiver>
+        <receiver android:name="util.TestAlarmReceiver02"></receiver>
+        <receiver android:name="util.mainAlarmReceiver"></receiver>
+        <!--  android:process=":remote" -->
+		<service android:name="service.MsgService" >
+            <intent-filter>
+                <action android:name="service.MsgService" />
+            </intent-filter>
+        </service>
+    </application>
+
+
+
+</manifest>

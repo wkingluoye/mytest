@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10px"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4px"
+            android:gravity="center"
+            android:text="计数" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/textview_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="0" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="开始" >
+        </Button>
+
+        <Button
+            android:id="@+id/button_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="停止" >
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+       <RadioGroup
+           android:id="@+id/radioGroup06"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:contentDescription="图标"
+           android:orientation="horizontal" >
+        
+        <RadioButton
+            android:id="@+id/rbt06_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="图标01" />
+
+        <RadioButton
+            android:id="@+id/rbt06_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="图标02" />
+        </RadioGroup>
+           </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+        <RadioGroup
+           android:id="@+id/radioGroup06_2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:contentDescription="图标"
+           android:orientation="horizontal" >
+        
+        <RadioButton
+            android:id="@+id/rbt06_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="通知栏" />
+
+        <RadioButton
+            android:id="@+id/rbt06_04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="正在运行"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn06_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="显示图标" >
+        </Button>
+
+        <Button
+            android:id="@+id/btn06_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="取消图标" >
+        </Button>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn06_03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="显示自定义图标" >
+        </Button>
+
+        <Button
+            android:id="@+id/btn06_04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="取消图标" >
+        </Button>
+    </LinearLayout>
+</LinearLayout>

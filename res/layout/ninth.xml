@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/chatting_bg_default" >
+
+    <RelativeLayout
+        android:id="@+id/layout09_wrapper01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/chat_footer_bg" >
+
+        <TextView
+            android:id="@+id/textView09_local"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/chat_send_btn"
+            android:gravity="center"
+            android:text="本地歌曲:" />
+
+        <Button
+            android:id="@+id/btn09_play"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/textView09_local"
+            android:background="@drawable/chat_send_btn"
+            android:text="播放" />
+
+        <Button
+            android:id="@+id/btn09_pause"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/btn09_play"
+            android:background="@drawable/chat_send_btn"
+            android:text="暂停" />
+
+        <Button
+            android:id="@+id/btn09_stop"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/btn09_pause"
+            android:background="@drawable/chat_send_btn"
+            android:text="停止" />
+    </RelativeLayout>
+
+    <!-- 底部按钮以及 编辑框 -->
+
+    <RelativeLayout
+        android:id="@+id/layout09_wrapper02"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout09_wrapper01"
+        android:background="@drawable/chat_footer_bg" >
+
+        <TextView
+            android:id="@+id/textView09_net"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/chat_send_btn"
+            android:gravity="center"
+            android:text="网络歌曲:" />
+
+        <Button
+            android:id="@+id/btn09_play_net"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/textView09_net"
+            android:background="@drawable/chat_send_btn"
+            android:text="播放" />
+
+        <Button
+            android:id="@+id/btn09_pause_net"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/btn09_play_net"
+            android:background="@drawable/chat_send_btn"
+            android:text="暂停" />
+
+        <Button
+            android:id="@+id/btn09_stop_net"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/btn09_pause_net"
+            android:background="@drawable/chat_send_btn"
+            android:text="停止" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/edt09_ShowLog"
+        style="@style/chatroom_chatblock_edittext"
+        android:layout_above="@+id/layout09_wrapper_bottom"
+        android:minLines="3"
+        android:text="" />
+
+    <RelativeLayout
+        android:id="@+id/bg_voice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/icon_room_myvoice" >
+
+        <TextView
+            android:id="@+id/voice_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:maxWidth="180dip"
+            android:padding="5dp"
+            android:text=""
+            android:textColor="@color/black" />
+		</RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingRight="12dp"
+            android:layout_centerVertical="true" >
+			
+            <ImageView
+                android:id="@+id/animationIV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/chatto_voice_playing"
+                />
+        </RelativeLayout>
+    
+
+    <RelativeLayout
+        android:id="@+id/layout09_wrapper_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/chat_footer_bg" >
+
+        <TextView
+            android:id="@+id/btn09_upload"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/chat_send_btn"
+            android:drawableRight="@drawable/chatto_voice_playing"
+            android:gravity="center"
+            android:text="上传MP3"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</RelativeLayout>

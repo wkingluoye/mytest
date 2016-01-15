@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#333333" >
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:layout_x="4dp"
+        android:layout_y="14dp"
+        android:gravity="center"
+        android:text="TextView" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_x="0dp"
+        android:layout_y="41dp"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="217dp"
+        android:layout_y="79dp"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:layout_x="142dp"
+        android:layout_y="79dp"
+        android:text="Button" />
+
+    <ProgressBar
+        android:id="@+id/pBar2"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="131dp"
+        android:layout_y="161dp"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/pBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="312dp"
+        android:layout_height="wrap_content"
+        android:layout_x="4dp"
+        android:layout_y="135dp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn04_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="239dp"
+        android:layout_y="220dp" />
+
+    <Button
+        android:id="@+id/btn04_4"
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:layout_x="8dp"
+        android:layout_y="275dp" />
+
+    <Button
+        android:id="@+id/btn04_5"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_x="167dp"
+        android:layout_y="275dp" />
+
+    <Button
+        android:id="@+id/btn04_6"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_x="167dp"
+        android:layout_y="339dp" />
+
+</AbsoluteLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <TextView android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:text="TEST DRAG"
+	android:textSize="20sp"
+	/>
+	<AbsoluteLayout android:id="@+id/container"
+	android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    >
+	    <Button android:id="@+id/btn"
+	    android:layout_width="150dp"
+		android:layout_height="wrap_content"
+		android:text="drag me!"
+	    />
+	</AbsoluteLayout>
+	<Button android:id="@+id/btn11"
+	    android:layout_width="150dp"
+		android:layout_height="wrap_content"
+		android:text="btn11"
+	    />
+    <EditText 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="点击我弹出输入法，发现拖动条回到了原位置，why？"
+    />
+</LinearLayout>
